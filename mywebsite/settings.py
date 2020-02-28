@@ -25,7 +25,7 @@ SECRET_KEY = '#rm=l$a@b)(1cnd3lsc+p%9*ymf08f@fx(^7$#som#+(x%=@0z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'travellowebsite.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'travellowebsite.herokuapp.com', 'travellowebsite.herokuapp.com/travello']
 
 
 # Application definition
