@@ -1,0 +1,31 @@
+<html>
+	<head>
+		RAVI
+	</head>
+	<body bgcolor="cyan">
+		{% block content %}
+		{% endblock %}
+			<p>{{cal_disp}}</p>
+			<p>{% for week in weekdays %}
+				{{week}}
+			</p>
+			{%endfor%}
+			Hello World!!! <p> Today is {{day}}</p>
+			{{day.year}}
+
+			{% if day.day == 23 %}
+				Today date is 23rd
+				<p>{{name}}</p>
+
+				{%endif%}
+			<p> {% if day.year == 2019 %}
+				This is 2019
+				{% else %}
+					2018 passed
+					{%endif%}
+				</p>
+			<p>
+				My name is {{name1}}
+			</p>
+	</body>
+</html>
