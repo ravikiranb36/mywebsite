@@ -20,7 +20,7 @@ from myapp import views as myapp_views
 admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('myapp.urls')),
-    path('travello/',include('travello.urls')),
+    #path('',include('myapp.urls')),
+    path('',include('travello.urls')),
 
 ]
