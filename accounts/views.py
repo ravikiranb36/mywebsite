@@ -28,7 +28,7 @@ def register(request):
                                             password=password1, email=email)
             user.save()
             messages.info(request, 'User created')
-            return redirect('/travello/accounts/login')
+            return redirect('accounts/login')
     else:
         return render(request, 'register.html')
     return render(request,'register.html')
@@ -39,10 +39,10 @@ def login(request):
         user=auth.authenticate(username=username,password=password)
         if user is not None:
             auth.login(request,user)
-            return redirect('/travello')
+            return redirect('')
         else:
             messages.info(request,'Invalid credentials')
     return render(request, 'login.html')
 def logout(request):
     auth.logout(request)
-    return redirect('/travello')
+    return redirect('')
